@@ -1,11 +1,11 @@
-# calCall
+# cal-mcp
 
 Read-only MCP server for macOS calendar access via EventKit. Stdio transport.
 
 ## Requirements
 
-- macOS 13.0+
-- Swift 6.1+
+- macOS 26.2+
+- Swift 6.2+
 - [MCP Swift SDK](https://github.com/modelcontextprotocol/swift-sdk)
 
 ## Build
@@ -14,14 +14,14 @@ Open in Xcode, add the MCP Swift SDK as a package dependency (select `MCP` libra
 
 Binary location after build:
 ```
-~/Library/Developer/Xcode/DerivedData/calCall-*/Build/Products/Debug/calCall
+~/Library/Developer/Xcode/DerivedData/cal-mcp-*/Build/Products/Debug/cal-mcp
 ```
 
 ## Calendar Permission
 
 On first run, macOS prompts for calendar access. If it doesn't appear, grant it manually:
 
-**System Settings > Privacy & Security > Calendars > calCall**
+**System Settings > Privacy & Security > Calendars > cal-mcp**
 
 ## MCP Config
 
@@ -29,8 +29,8 @@ Claude Code (`~/.claude/settings.json`):
 ```json
 {
   "mcpServers": {
-    "calCall": {
-      "command": "/path/to/calCall"
+    "cal-mcp": {
+      "command": "/path/to/cal-mcp"
     }
   }
 }
@@ -61,7 +61,7 @@ All-day and cancelled events are excluded.
 Returns per event: `id | title | start - end | duration | calendar`
 
 ```
-0F68EC3B-...:4C3568A6-.../RID=794223000 | Team One Daily | 2026-03-03T10:30:00+01:00 - 2026-03-03T11:00:00+01:00 | 30min | Calendar
+0F68EC3B-...:4C3568A6-.../RID=794223000 | Scrum Meeting Standup | 2026-03-03T10:30:00+01:00 - 2026-03-03T11:00:00+01:00 | 30min | Calendar
 ```
 
 ### get_event_detail

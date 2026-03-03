@@ -143,7 +143,7 @@ enum CalendarError: Error, CustomStringConvertible {
         case .accessDenied:
             return "Calendar access denied. Grant permission in System Settings > Privacy & Security > Calendars."
         case .accessNotDetermined:
-            return "Calendar access not yet granted. Run the calCall binary directly once from Terminal to trigger the permission prompt, then grant access in System Settings > Privacy & Security > Calendars."
+            return "Calendar access not yet granted. Run the cal-mcp binary directly once from Terminal to trigger the permission prompt, then grant access in System Settings > Privacy & Security > Calendars."
         case .invalidDate(let value):
             return "Invalid ISO 8601 date: \(value)"
         case .invalidTimezone(let value):

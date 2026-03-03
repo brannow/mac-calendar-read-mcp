@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5FA9A68F2F56C93200275780 /* MCP in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA9A68E2F56C93200275780 /* MCP */; };
+		5F7145602F56DCBC008C896E /* MCP in Frameworks */ = {isa = PBXBuildFile; productRef = 5F71455F2F56DCBC008C896E /* MCP */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,13 +23,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		5F2939BB2F56BED0005C3E42 /* calCall */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = calCall; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F2939BB2F56BED0005C3E42 /* cal-mcp */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "cal-mcp"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		5F2939BD2F56BED0005C3E42 /* calCall */ = {
+		5F2939BD2F56BED0005C3E42 /* cal-mcp */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = calCall;
+			path = "cal-mcp";
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA9A68F2F56C93200275780 /* MCP in Frameworks */,
+				5F7145602F56DCBC008C896E /* MCP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,7 +49,7 @@
 		5F2939B22F56BED0005C3E42 = {
 			isa = PBXGroup;
 			children = (
-				5F2939BD2F56BED0005C3E42 /* calCall */,
+				5F2939BD2F56BED0005C3E42 /* cal-mcp */,
 				5F2939BC2F56BED0005C3E42 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,7 +57,7 @@
 		5F2939BC2F56BED0005C3E42 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5F2939BB2F56BED0005C3E42 /* calCall */,
+				5F2939BB2F56BED0005C3E42 /* cal-mcp */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,9 +65,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5F2939BA2F56BED0005C3E42 /* calCall */ = {
+		5F2939BA2F56BED0005C3E42 /* cal-mcp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5F2939C22F56BED0005C3E42 /* Build configuration list for PBXNativeTarget "calCall" */;
+			buildConfigurationList = 5F2939C22F56BED0005C3E42 /* Build configuration list for PBXNativeTarget "cal-mcp" */;
 			buildPhases = (
 				5F2939B72F56BED0005C3E42 /* Sources */,
 				5F2939B82F56BED0005C3E42 /* Frameworks */,
@@ -78,14 +78,14 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				5F2939BD2F56BED0005C3E42 /* calCall */,
+				5F2939BD2F56BED0005C3E42 /* cal-mcp */,
 			);
-			name = calCall;
+			name = "cal-mcp";
 			packageProductDependencies = (
-				5FA9A68E2F56C93200275780 /* MCP */,
+				5F71455F2F56DCBC008C896E /* MCP */,
 			);
 			productName = calCall;
-			productReference = 5F2939BB2F56BED0005C3E42 /* calCall */;
+			productReference = 5F2939BB2F56BED0005C3E42 /* cal-mcp */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5F2939B62F56BED0005C3E42 /* Build configuration list for PBXProject "calCall" */;
+			buildConfigurationList = 5F2939B62F56BED0005C3E42 /* Build configuration list for PBXProject "cal-mcp" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -113,14 +113,14 @@
 			mainGroup = 5F2939B22F56BED0005C3E42;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+				5F71455E2F56DCBC008C896E /* XCRemoteSwiftPackageReference "swift-sdk" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F2939BC2F56BED0005C3E42 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5F2939BA2F56BED0005C3E42 /* calCall */,
+				5F2939BA2F56BED0005C3E42 /* cal-mcp */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +194,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "cal-mcp";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -251,6 +252,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 26.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "cal-mcp";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 			};
@@ -285,7 +287,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5F2939B62F56BED0005C3E42 /* Build configuration list for PBXProject "calCall" */ = {
+		5F2939B62F56BED0005C3E42 /* Build configuration list for PBXProject "cal-mcp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2939C02F56BED0005C3E42 /* Debug */,
@@ -294,7 +296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5F2939C22F56BED0005C3E42 /* Build configuration list for PBXNativeTarget "calCall" */ = {
+		5F2939C22F56BED0005C3E42 /* Build configuration list for PBXNativeTarget "cal-mcp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5F2939C32F56BED0005C3E42 /* Debug */,
@@ -306,7 +308,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+		5F71455E2F56DCBC008C896E /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/modelcontextprotocol/swift-sdk";
 			requirement = {
@@ -317,9 +319,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5FA9A68E2F56C93200275780 /* MCP */ = {
+		5F71455F2F56DCBC008C896E /* MCP */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			package = 5F71455E2F56DCBC008C896E /* XCRemoteSwiftPackageReference "swift-sdk" */;
 			productName = MCP;
 		};
 /* End XCSwiftPackageProductDependency section */

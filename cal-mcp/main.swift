@@ -1,6 +1,6 @@
 //
 //  main.swift
-//  calCall
+//  cal-mcp
 //
 //  Created by Benjamin Rannow on 03.03.26.
 //
@@ -18,7 +18,7 @@ if !hasAccess {
 }
 
 let server = Server(
-    name: "calCall",
+    name: "cal-mcp",
     version: "1.0.0",
     instructions: "Read-only calendar access. Use list_calendars to discover calendars, then get_events to query events by date range. For time booking in CET, pass timezone: \"Europe/Berlin\".",
     capabilities: Server.Capabilities(
