@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5FA9A68F2F56C93200275780 /* MCP in Frameworks */ = {isa = PBXBuildFile; productRef = 5FA9A68E2F56C93200275780 /* MCP */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		5F2939B92F56BED0005C3E42 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5FA9A68F2F56C93200275780 /* MCP in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +82,7 @@
 			);
 			name = calCall;
 			packageProductDependencies = (
+				5FA9A68E2F56C93200275780 /* MCP */,
 			);
 			productName = calCall;
 			productReference = 5F2939BB2F56BED0005C3E42 /* calCall */;
@@ -106,6 +112,9 @@
 			);
 			mainGroup = 5F2939B22F56BED0005C3E42;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 5F2939BC2F56BED0005C3E42 /* Products */;
 			projectDirPath = "";
@@ -295,6 +304,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/modelcontextprotocol/swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5FA9A68E2F56C93200275780 /* MCP */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5FA9A68D2F56C93200275780 /* XCRemoteSwiftPackageReference "swift-sdk" */;
+			productName = MCP;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5F2939B32F56BED0005C3E42 /* Project object */;
 }
